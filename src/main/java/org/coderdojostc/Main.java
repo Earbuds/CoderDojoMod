@@ -1,4 +1,4 @@
-package mod.coderdojostc.org;
+package org.coderdojostc;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
