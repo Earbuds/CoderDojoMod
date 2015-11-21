@@ -1,43 +1,39 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+#############
+## Eclipse ##
+#############
 
-# Folder config file
-Desktop.ini
+bin/
+tmp/
+.metadata/
+.settings/
+build/
+eclipse/
+.classpath
+.project
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+##############
+## MC Forge ##
+##############
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+gradle/
+build.gradle
+.gradle/
+gradlew
+gradlew.bat
+*.db
+CREDITS-fml.txt
+LICENSE-fml.txt
+MinecraftForge-Credits.txt
+MinecraftForge-License.txt
+README.txt
+forge-*-changelog.txt
+*changelog.txt
 
-# Windows shortcuts
-*.lnk
+##############
+#### IDEA ####
+##############
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+*.iml
+*.ipr
+*.iws
+out/
