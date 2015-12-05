@@ -2,15 +2,17 @@ package org.coderdojostc.common.block;
 
 import org.coderdojostc.common.core.CreativeTabCD;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Block.SoundType;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
 /**
- * @author earbuds
- * @author dluxcode
+ * @author DLuxCru
+ *The CDTileEntityContainer class functions
+ * as something of a link between blocks and their associated tile entities.
  */
-public class CDBlock extends Block {
+public class CDTileEntityContainer extends BlockContainer {
 	/**
 	 * 
 	 * @param material The material type of the block.
@@ -21,15 +23,25 @@ public class CDBlock extends Block {
 	 * @param harvestTool Tool used to harvest this block.
 	 * @param harvestLevel The harvest level of the block.
 	 */
-	public CDBlock(Material material, SoundType sound, String blockname,
-			float hardness, float resistance, String harvestTool, int harvestLevel) {
+	public CDTileEntityContainer(Material material, SoundType sound, String blockname,
+			float hardness, float resistance, String harvestTool, int harvestLevel){
 		super(material);
+		// TODO Auto-generated constructor stub
 		this.setStepSound(sound);
 		this.setBlockName(blockname);
 		this.setHardness(hardness);
 		this.setResistance(resistance);
 		this.setHarvestLevel(harvestTool, harvestLevel);
 		this.setCreativeTab(CreativeTabCD.tabCD);
-	}
 	
+	}
+	/**
+	 * @return returns a tile entity of the CDTileEntity type.
+	 */
+	@Override
+	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+		// TODO Auto-generated method stub
+		return new CDTileEntity();
+	}
+
 }
