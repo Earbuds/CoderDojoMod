@@ -33,7 +33,6 @@ public class CDTileEntityContainer extends BlockContainer {
 		this.setResistance(resistance);
 		this.setHarvestLevel(harvestTool, harvestLevel);
 		this.setCreativeTab(CreativeTabCD.tabCD);
-	
 	}
 	/**
 	 * @return returns a tile entity of the CDTileEntity type.
