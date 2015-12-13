@@ -20,7 +20,7 @@ public class Main {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 
-		test = new CDBlock(Material.ground, 0.5F, Block.soundTypeGrass, "test");
+		test = new CDBlock(Material.ground, Block.soundTypeGrass, "test", 1.0F, 1.0F, "pickaxe", 1);
 		
 	}
 
