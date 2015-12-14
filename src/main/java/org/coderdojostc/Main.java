@@ -1,6 +1,9 @@
 package org.coderdojostc;
 
 import org.coderdojostc.common.block.CDBlock;
+import org.coderdojostc.common.block.CDBlocks;
+import org.coderdojostc.common.block.item.CDItems;
+import org.coderdojostc.common.block.tileentity.CDTileEntities;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -14,23 +17,27 @@ import net.minecraft.block.material.Material;
 public class Main {
 	public static String MODID = "CoderDojoMod";
 	public static String VERSION = "0";
-	
-	public static Block test;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
-
-		test = new CDBlock(Material.ground, Block.soundTypeGrass, "test", 1.0F, 1.0F, "pickaxe", 1);
+		
 		
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
 
+		CDItems.init();
+		CDBlocks.init();
+		CDTileEntities.init();
+		
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 
+		CDItems.registerItems();
+		CDBlocks.registerBlocks();
+		
 	}
 }

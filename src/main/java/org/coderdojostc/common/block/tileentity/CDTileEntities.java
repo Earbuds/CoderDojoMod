@@ -1,4 +1,4 @@
-package org.coderdojostc.common.block;
+package org.coderdojostc.common.block.tileentity;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 

@@ -7,7 +7,7 @@ import net.minecraft.block.Block.SoundType;
 import net.minecraft.block.material.Material;
 
 /**
- * @author earbuds
+ * @author Earbuds
  * @author dluxcode
  */
 public class CDBlock extends Block {
@@ -21,11 +21,11 @@ public class CDBlock extends Block {
 	 * @param harvestTool Tool used to harvest this block.
 	 * @param harvestLevel The harvest level of the block.
 	 */
-	public CDBlock(Material material, SoundType sound, String blockname,
+	public CDBlock(Material material, SoundType sound, String blockName,
 			float hardness, float resistance, String harvestTool, int harvestLevel) {
 		super(material);
 		this.setStepSound(sound);
-		this.setBlockName(blockname);
+		this.setBlockName(blockName);
 		this.setHardness(hardness);
 		this.setResistance(resistance);
 		this.setHarvestLevel(harvestTool, harvestLevel);

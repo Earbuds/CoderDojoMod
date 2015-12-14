@@ -1,4 +1,4 @@
-package org.coderdojostc.common.block;
+package org.coderdojostc.common.block.tileentity;
 
 import org.coderdojostc.common.core.CreativeTabCD;
 
