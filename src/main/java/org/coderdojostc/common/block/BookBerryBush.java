@@ -1,5 +1,7 @@
 package org.coderdojostc.common.block;
 
+import org.coderdojostc.common.block.tileentity.CDTileEntity;
+
 import net.minecraft.server.gui.IUpdatePlayerListBox;
 
 public class BookBerryBush extends CDTileEntity implements IUpdatePlayerListBox{
