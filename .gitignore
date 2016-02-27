@@ -4,6 +4,7 @@
 
 bin/
 tmp/
+libs/
 .metadata/
 .settings/
 build/

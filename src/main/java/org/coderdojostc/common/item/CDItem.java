@@ -1,4 +1,4 @@
-package org.coderdojostc.common.block.item;
+package org.coderdojostc.common.item;
 
 import org.coderdojostc.common.core.CreativeTabCD;
 
